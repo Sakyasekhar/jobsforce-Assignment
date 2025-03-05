@@ -59,7 +59,7 @@ export default function Home() {
 
   return (
     <div >
-      <div className="hidden sm:block"><JellyBlob size={size} text={text} color={color} /></div>
+      <JellyBlob size={size} text={text} color={color} className="hidden md:block"/>
       
       <Navbar handleMenuClick={handleMenuClick} />
 
