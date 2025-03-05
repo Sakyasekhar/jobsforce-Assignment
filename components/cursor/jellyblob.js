@@ -57,6 +57,7 @@ const JellyBlob = ({text,size,color}) => {
 
   // Set GSAP quick setter Values on useLayoutEffect Update
   useLayoutEffect(() => {
+    if (!jellyRef.current || !textRef.current) return;
     set.x = gsap.quickSetter(jellyRef.current, "x", "px");
     set.y = gsap.quickSetter(jellyRef.current, "y", "px");
     set.r = gsap.quickSetter(jellyRef.current, "rotate", "deg");
@@ -81,7 +82,7 @@ const JellyBlob = ({text,size,color}) => {
     set.sx(1 + scale);
     set.sy(1 - scale);
     set.rt(-rotation);
-  }, []);
+  }, [pos.x, pos.y, vel.x, vel.y, set]);
 
   // Run on Mouse Move
   useLayoutEffect(() => {
@@ -110,7 +111,7 @@ const JellyBlob = ({text,size,color}) => {
     return () => {
       window.removeEventListener("mousemove", setFromEvent);
     };
-  }, []);
+  }, [loop, pos, vel]);
 
   useTicker(loop);
 

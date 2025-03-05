@@ -25,14 +25,14 @@ export default function ourphilosophy() {
           <p className="text-xl sm:text-xl lg:text-2xl leading-[1]">
           In our team, developers work alongside 
           designers, strategists and analysts. 
-          Cuberto doesn't do cookie-cutter 
+          Cuberto doesn&apos;t do cookie-cutter 
           solutions and we build products exactly 
           as they were during the design phase, no 
           short cuts or simplifications.
           </p>
 
           <p className="text-xl sm:text-xl lg:text-2xl leading-[1]">
-          We're driven by user-centered design 
+          We&apos;re driven by user-centered design 
           that drives productivity and increases
           revenue. Our expertise and ingenuity are 
           remarkable, yet we always strive to outdo 
