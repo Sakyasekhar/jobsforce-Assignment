@@ -64,7 +64,7 @@ const JellyBlob = ({text,size,color}) => {
     set.sy = gsap.quickSetter(jellyRef.current, "scaleY");
     set.width = gsap.quickSetter(jellyRef.current, "width","px");
     set.rt = gsap.quickSetter(textRef.current, "rotate", "deg");
-  }, []);
+  }, [set]);
 
   // Start Animation loop
   const loop = useCallback(() => {
