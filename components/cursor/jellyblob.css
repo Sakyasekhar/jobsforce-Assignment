@@ -1,0 +1,48 @@
+
+/* Main Background Div */
+.container-div {
+    text-align: center;
+    width: 100%;
+    z-index:9999;
+  }
+  /* Jelly Blob Div */
+  .jelly-blob {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+ 
+    border-color: black;
+    border-radius: 75px;
+  
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin:   50% 50%;
+    -o-transform-origin:      50% 50%;
+    -ms-transform-origin:   50% 50%;
+    transform-origin:       50% 50%;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform:  translate(-50%, -50%);
+    -o-transform:    translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform:      translate(-50%, -50%);
+    
+    
+    will-change: width, height, transform, border;
+    z-index: 9999;
+    pointer-events: none;
+  }
+  /* Text Inside Jelly Blob */
+  .inside-text {
+    width: 100%;
+    opacity: 1;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+  }
